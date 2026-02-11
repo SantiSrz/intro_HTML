@@ -2,8 +2,63 @@
 <html>
 <head>
     <title>Mi primera web</title>
+    <style> table, th, td {
+        border: 1px solid black;
+    }
+</style>
 </head>
 <body>
+    <table style="width: 500px;">
+        <thead>
+            <tr>
+                <th>Superheroe</th>
+                <th>Compañia</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Superman</td>
+                <td>DC comics</td>
+            </tr>
+            <tr>
+                <td>Spiderman</td>
+                <td>Marvel Comics</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- Lista no ordenada -->
+    <ul>
+        <li>Superman</li>
+        <li>Batman</li>
+        <li>Spiderman</li>
+        <li>Hulk</li>
+    </ul>
+    <!-- Lista ordenada -->
+    <ol>
+        <li>Superman</li>
+        <li>Batman</li>
+        <li>Spiderman</li>
+        <li>Hulk</li>
+        <ol>
+            <li style="list-style-type: lower-alpha;">Hulk rojo</li>
+            <li style="list-style-type: lower-alpha;">Hulk verde</li>
+            <li style="list-style-type: lower-alpha;">Hulk definitio</li>
+        </ol>
+
+    </ol>
+
+    <form action="/formulario" method="GET">
+        <label for="Compañia">Compa&ntilde;ia: </label>
+        <input type="text" id="Compañia" name="Compañia" placeholder="EJ: DC comics..."/>
+        <br>
+        <label for="Personaje">Personaje: </label>
+        <input type="text" id="Personaje" name="Personaje" placeholder="EJ: Batman"/>
+        <br>
+        <textarea cols="30" rows="10" id="comentario" placeholder="Ingrese comentario:" name="comentario" ></textarea>
+        <br>
+        <button type="reset">Borrar</button>
+        <button type="submit">Enviar</button>
+    </form>  
     <h1>Comics</h1>
     <hr>
     <h2>DC</h2>
@@ -17,7 +72,10 @@
     <h3>Villanos</h3>
     <h4>Escuadron Suicida</h4>
     <h5>Joker</h5>
-    <p>El joker es de los mejores villanos jamas escritos</p>
+    <p>El <span style="color:green">joker</span> es un villano <br>enemigo de batman y <br>es de los mejores villanos <br>jamas escritos</p>
     <!-- este es un comentario que no aparece en la pagina web -->
+    <a target="_blank" href="https://github.com/SantiSrz/intro_HTML">Ir al repositorio</a>
+    <br>
+    <img src="imagenes/joker.jpg" width="400" height="300"/>
 </body>
 </html>
